@@ -1,3 +1,114 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+header{
+  height: 100px;
+  background-color: black;
+}
+
+.jumbotron{
+  height: 500px;
+  /* background-color: pink; */
+}
+
+.jumbotron img{
+  border-radius: 999rem;
+  height: 570px;
+}
+
+.jumbotron .sx{
+  width: 40%;
+}
+
+.jumbotron .sx h2{
+  font-size: 50px;
+  color: #3f3a64;
+}
+
+.jumbotron .sx p{
+  color: #b8b7c6;
+  font-size: 20px;
+}
+.jumbotron .sx p:last-child{
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.btngreen{
+  height: 50px;
+  background-color: #20ad96;
+  color: white;
+  line-height: 50px;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.jumbotron a{
+  text-decoration: underline solid grey;
+  color: #20ad96;
+}
+
+.sponsor img{
+  display: inline;
+  margin-right: 70px;
+}
+
+#sponsor{
+  background-color: #f5f7fa;
+}
+
+.corsi{
+  flex-wrap: wrap;
+}
+
+.corso{
+  width: 50%;
+  padding: 20px;
+}
+
+.ppp {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  margin-right: 30px;
+}
+
+.corso h4{
+  padding: 20px 0px;
+  font-size: 20px;
+  color: #3f3a64;
+}
+
+.prezzo{
+  color: #20ad96;
+  font-size: 25px;
+  font-style: bold;
+}
+
+.meta{
+  color: #b8b7c6;
+}
+
+#coach{
+  height: 1000px;
+}
+
+.benefit{
+  width: calc(100% / 4);
+  line-height: 25px;
+}
+
+.benefit img{
+  height: auto;
+  max-width: 60%;
+}
+
+#coach h2{
+  font-size: 35px;
+}
+
+.enjoy{
+  margin-left: 90px;
+}
