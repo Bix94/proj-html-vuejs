@@ -27,12 +27,13 @@
           <img src="img/dark-logo.png" alt="">
         </div>
         <div class="row aic">
+          <!-- Ciclo for array NAVBAR -->
           <ul class="nav" v-for="nav in navbar">
-            {{nav}}
-            <i class="fas fa-chevron-down"></i>
+            <li>{{nav}}   <i class="fas fa-chevron-down pdl_5"></i></li>
           </ul>
           <i class="far fa-user-circle pdr_20"></i>
           <div class="lente">
+            <!-- INPUT RICERCA -->
             <input type="text" name="" value="" placeholder="Search">
             <i class="fas fa-search pdr_10 green"></i>
           </div>
@@ -42,6 +43,7 @@
     </header>
     <!-- FIXED NAV -->
     <div class="fixed column aic jcc">
+      <!-- 4 I -->
       <i class="fas fa-ruler"></i>
       <i class="fas fa-life-ring"></i>
       <i class="fas fa-book"></i>
@@ -101,85 +103,20 @@
             <h2 class="mgt_10 darkb">Feauterd Online Courses</h2>
           </div>
           <!-- ROW CORSI DA 6 BOX(CORSO) CON WRAP AL 50% -->
-          <div class="row corsi mgt_60">
-            <!-- 1o BOX-->
-            <div class="corso row aic">
-              <!-- IMG + SPAN + H4  -->
-              <div class="ppp">
-
-              </div>
-              <div class="box dx column ais">
-                <span class="prezzo"> $ 40.00 </span>
-                <h4>Learning to Write as a Professional Author</h4>
-                <div class="row">
-                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>20 Lessons </span>
-                  <span class="meta"><i class="far fa-user pdr_10"></i>50 Students </span>
+          <div class="contenitore row spb">
+            <div v-for="corso in corsi" class="corsi mgt_40">
+              <!-- 1o BOX-->
+              <div class="corso row aic">
+                <div class="sfondo">
+                  <img :src=" 'img/' + corso.immagine + '.jpg' " alt="">
                 </div>
-              </div>
-            </div>
-            <!-- 2o BOX -->
-            <div class="corso row aic">
-              <div class="ppp">
-              </div>
-              <div class="box dx column ais">
-                <span class="prezzo"> Free </span>
-                <h4>Customer-centric Info-Tech Strategies</h4>
-                <div class="row">
-                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>24 Lessons </span>
-                  <span class="meta"><i class="far fa-user pdr_10"></i>769 Students </span>
-                </div>
-              </div>
-            </div>
-            <!-- 3o BOX -->
-            <div class="corso row aic">
-              <div class="ppp">
-              </div>
-              <div class="box dx column ais">
-                <span class="prezzo"> $19.00 </span>
-                <h4>Open Programming Courses for Everyone: Phyton</h4>
-                <div class="row">
-                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>17 Lessons </span>
-                  <span class="meta"><i class="far fa-user pdr_10"></i>62 Students </span>
-                </div>
-              </div>
-
-            </div>
-            <!-- 4o BOX -->
-            <div class="corso row aic">
-              <div class="ppp">
-              </div>
-              <div class="box dx column ais">
-                <span class="prezzo"> $26.00 </span>
-                <h4>Academic Listening and Note-taking</h4>
-                <div class="row">
-                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>14 Lessons </span>
-                  <span class="meta"><i class="far fa-user pdr_10"></i>67 Students </span>
-                </div>
-              </div>
-            </div>
-            <!-- 5o BOX -->
-            <div class="corso row aic">
-              <div class="ppp">
-              </div>
-              <div class="box dx column ais">
-                <span class="prezzo"> $39.00 </span>
-                <h4>Master JQuery in a short period of time</h4>
-                <div class="row">
-                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>6 Lessons </span>
-                  <span class="meta"><i class="far fa-user pdr_10"></i>51 Students </span>
-                </div>
-              </div>
-            </div>
-            <!-- 6o BOX -->
-            <div class="corso row aic">
-              <div class="ppp">
-              </div>
-              <div class="box dx column ais">
-                <span class="prezzo"> $59.00 </span>
-                <h4>Introduction to Javascript for Beginners</h4>
-                <div class="row">
-                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>14 Lessons </span>
-                  <span class="meta"><i class="far fa-user pdr_10"></i>76 Students </span>
+                <div class="box dx column ais pdr_20 pdl_10">
+                  <span class="prezzo">{{corso.prezzo}}</span>
+                  <h4>{{corso.titolo}}</h4>
+                  <div class="row">
+                    <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>{{corso.lezioni}} </span>
+                    <span class="meta"><i class="far fa-user pdr_10"></i>{{corso.studenti}} </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -187,8 +124,6 @@
           <div class="centro tac">
             <span id="violet" class="tac mgt_40 mgb_100 btngreen">View all courses  <i class="fas fa-arrow-right"></i></span>
           </div>
-          <!-- /ROW CORSI -->
-        </div>
       </section>
       <!-- / ONLINE -->
       <!-- SECTION COACH -->
@@ -216,7 +151,7 @@
                   <img src="img/home-2-image-box-01.png" alt="">
                   <h3 class="mgt_40 darkb">Customize Preferences</h3>
                   <p class="mgt_20 grey">Learners are given the right to arrange and customize their study schedule and timetable based on preferences. </p>
-                  <a href="#" class="mgt_10 darkb">Start here <i class="fas fa-arrow-right"></i></a>
+                  <a href="#" class="mgt_20 darkb">Start here <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- 2a COL -->
                 <div class="benefit column">
@@ -224,7 +159,7 @@
                   <img src="img/about-us-02-image-box-02.png" alt="">
                   <h3 class="mgt_40 darkb">Cloud Storage</h3>
                   <p class="mgt_20 grey">You can store online lessons via online cloud or download to your device and revise lessons on the way.  </p>
-                  <a href="#" class="mgt_10 darkb">Get Free Quote <i class="fas fa-arrow-right"></i></a>
+                  <a href="#" class="mgt_20 darkb ">Get Free Quote <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="benefit column">
                   <!-- 3a COL -->
@@ -232,7 +167,7 @@
                   <img src="img/home-2-image-box-03.png" alt="">
                   <h3 class="mgt_20 darkb">Multimedia Channels</h3>
                   <p class="mgt_20 grey">We provide study materials with various formats: video, audio, slides, doc, prints, books and applications. </p>
-                  <a href="#" class="mgt_10 darkb">Start now <i class="fas fa-arrow-right"></i></a>
+                  <a href="#" class="mgt_20 darkb">Start now <i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
               <!-- / ROW BENEFITS -->
@@ -247,7 +182,7 @@
                 <!-- col al 40 -->
                 <div class="column enjoy jcs pdt_50 ">
                   <!-- span+h2+p+a -->
-                  <span class="up grey mgt_40">Get started <span class="darkb">effortlessly</span></span>
+                  <span class="up grey mgt_20">Get started <span class="darkb">effortlessly</span></span>
                   <h2 class="mgb_20 darkb mgt_20">Enjoy Our <a href="#" class="green">Companionship</a></h2>
                   <p class="grey">Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek for some hidden hints of early-bird rewards as well.</p>
                   <a href="#" class="green mgt_40">Download free guidebook  <i class="fas fa-arrow-right"></i></a>
@@ -264,11 +199,11 @@
         <!-- 3 img absolute -->
         <div class="relative">
           <!-- 1a  -->
-          <div class="absolute undici">
+          <div class="absolute sette">
             <img src="img/maxcoach-shape-01.png" alt="">
           </div>
           <!-- 2a -->
-          <div class="absolute dodici">
+          <div class="absolute otto">
             <img src="img/maxcoach-shape-02.png" alt="">
           </div>
           <!-- 3a -->
@@ -287,12 +222,12 @@
               <h4 class="darkb">It's a choice of quality for peopole with special needs</h4>
               <p class="grey mgt_20">I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
               <div class="testimonial mgt_20 row">
-                <div class="test mgr_20">
+                <div class="test sinistra mgr_20">
                 </div>
                 <!-- testimonial -->
                 <div class="column jcc">
-                  <span class="up darkb">Mina Hollace</span>
-                  <span class="lightgrey"> / Freelancer</span>
+                  <span class="up darkb">Florence themes</span>
+                  <span class="lightgrey"> / Multimedia Admin</span>
                 </div>
               </div>
             </div>
@@ -302,12 +237,12 @@
               <h4 class="darkb">High level of efficiency and scientific teaching methods</h4>
               <p class="grey mgt_20">I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.</p>
               <div class="testimonial mgt_20 row">
-                <div class="test mgr_20">
+                <div class="test centrale mgr_20">
                 </div>
                 <!-- testimonial -->
                 <div class="column jcc">
-                  <span class="up darkb">Florence themes</span>
-                  <span class="lightgrey"> / Multimedia Admin</span>
+                  <span class="up darkb">Mina Hollace</span>
+                  <span class="lightgrey"> / Freelancer</span>
                 </div>
               </div>
             </div>
@@ -317,7 +252,7 @@
               <h4 class="darkb">Professional team of specialist and passionate mentors at reach</h4>
               <p class="grey mgt_20">I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
               <div class="testimonial mgt_20 row">
-                <div class="test mgr_20">
+                <div class="test destra mgr_20">
                 </div>
                 <!-- testimonial -->
                 <div class="column jcc">
@@ -405,8 +340,8 @@
                 <span class="lightgrey up">Artist</span>
                 <h3 class="darkb mgt_10">Brush Strokes Energize Trees in paintings</h3>
                 <div class="row lightgrey mgt_20">
-                  <span class=" mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
-                  <span class=""><i class="far fa-eye"></i>688 views</span>
+                  <span class="mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
+                  <span class="mgb_20"><i class="far fa-eye"></i>688 views</span>
                 </div>
               </div>
             </div>
@@ -419,8 +354,8 @@
                 <span class="lightgrey up">Artist</span>
                 <h3 class="darkb mgt_10">Pocket-Sized Notebooks Hold Miniature Paintings</h3>
                 <div class="row lightgrey mgt_20">
-                  <span class=" mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
-                  <span class=""><i class="far fa-eye"></i>603 views</span>
+                  <span class="mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
+                  <span class="mgb_20"><i class="far fa-eye"></i>603 views</span>
                 </div>
               </div>
             </div>
@@ -435,11 +370,11 @@
           <!-- 1a -->
           <div class="cerchio quarto absolute"></div>
           <!-- 2a -->
-          <div class="absolute tredici">
+          <div class="absolute nove">
             <img src="img/maxcoach-shape-02.png" alt="">
           </div>
           <!-- 3a -->
-          <div class="absolute quattordici">
+          <div class="absolute dieci">
             <img src="img/maxcoach-shape-09.png" alt="">
           </div>
           <div class="centro tac sub">
@@ -457,37 +392,54 @@
       <!-- / NEWSLETTER -->
     </main>
     <!-- /MAIN -->
+    <!-- FOOTER -->
     <footer>
+      <!-- row 2 div -->
+      <div class="centro row foot spb">
+        <!-- ciclo coordinate -->
+        <div v-for="addre in address" class="address">
+          <h4 class="darkb">Address</h4>
+          <!-- indirizzo -->
+          <p>{{addre.indirizzo}}</p>
+          <!-- telefono -->
+          <p>{{addre.telefono}}</p>
+          <!-- email -->
+          <p>{{addre.email}}</p>
+          <div class="socialist mgt_20">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="row padre">
+          <div class="explore">
+            <h4 class="darkb">Explore</h4>
+            <div class="explore row">
+              <ul v-for="expo in explore">
+                <!-- stampo expo -->
+                <li>{{expo}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="information">
+            <h4 class="darkb">Information</h4>
+            <ul v-for="info in information">
+              <!-- stampo info -->
+              <li>{{info}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- COPY -->
+      <div class="centro tac copyright">
+        <span> © 2020 Maxcoach. All Rights Reserved </span>
+      </div>
+      <!-- /COPY -->
     </footer>
+    <!-- /FOOTER -->
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ <!-- / container APP -->
   <script src="js/script.js"></script>
 </body>
 </html>
