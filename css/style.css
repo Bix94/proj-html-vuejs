@@ -20,7 +20,36 @@ body{
 header{
   height: 100px;
   box-shadow: 2px 4px 10px 2px lightgrey;
-  padding: 10px;
+}
+
+.centro{
+  height: 100%;
+}
+
+.centro img{
+  height: 30px;
+}
+
+.nav{
+  margin-right: 35px;
+}
+
+.head input{
+  background-color: #f5f5f5;
+  color:  #727272;
+  width: 200px;
+  padding-left: 15px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  height: 40px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.lente{
+  background-color: #f5f5f5;
+  border-radius: 5px;
 }
 
 .jumbotron img{

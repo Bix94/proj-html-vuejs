@@ -20,345 +20,381 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="app">
+    <header>
+      <div class="row head centro aic spb">
+        <div>
+          <img src="img/dark-logo.png" alt="">
+        </div>
+        <div class="row aic">
+          <ul class="nav" v-for="nav in navbar">
+            {{nav}}
+            <i class="fas fa-chevron-down"></i>
+          </ul>
+          <i class="far fa-user-circle pdr_20"></i>
+          <div class="lente">
+            <input type="text" name="" value="" placeholder="Search">
+            <i class="fas fa-search pdr_10 green"></i>
+          </div>
+        </div>
 
-  <header>
-
-  </header>
-  <!-- JUMBOTRON CENTRATO + ROW + ALIGN CENTER + SPACE BETWEEN -->
-  <div class="jumbotron centro row aic spb">
-    <!-- una colonna SX -->
-    <div class="column sx">
-      <!-- H2 + P + SPAN + IMG ESTERNA -->
-      <h2 class="mgb_20 darkb">Distant learning for further expansion</h2>
-      <p class="grey">Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
-      <span id="violet" class="tac mgt_20 btngreen"><i class="fas fa-download pdr_10"></i> Download free guide</span>
-      <p>Have questions?  <a href="#">Get Free Sample <i class="fas fa-arrow-right"></i></a></p>
     </div>
-    <!-- DX IMG -->
-      <img class="mgt_60" src="img/about-me-profile.jpg" alt="">
-  </div>
-  <!-- /JUMBOTRON -->
-  <!-- ROW CONTENT CENTER WIDTH 100 / 6 -->
-  <div class="row centro jcc mgt_100">
-    <!-- SPONSOR 6 IMG -->
-    <ul class="sponsor row aic pdb_50">
-      <img src="img/client-logo-01.png" alt="">
-      <img src="img/client-logo-02.png" alt="">
-      <img src="img/client-logo-03.png" alt="">
-      <img src="img/client-logo-04.png" alt="">
-      <img src="img/client-logo-05.png" alt="">
-      <img src="img/client-logo-06.png" alt="">
-    </ul>
-  </div>
-  <!-- /SPONSOR -->
-  <main>
-    <!-- SECTION ONLINE -->
-    <section id="online">
-      <!-- TITOLO SEZIONE  -->
-      <div class="centro pdt_50">
-        <!-- SPAN + H2 CENTRATI -->
-        <div class="tac">
-          <span class="up lightgrey">Stimulated to learn?</span>
-          <h2 class="mgt_10 darkb">Feauterd Online Courses</h2>
-        </div>
-        <!-- ROW CORSI DA 6 BOX(CORSO) CON WRAP AL 50% -->
-        <div class="row corsi mgt_60">
-          <!-- 1o BOX-->
-          <div class="corso row aic">
-            <!-- IMG + SPAN + H4  -->
-            <div class="ppp">
-            </div>
-            <div class="box dx column ais">
-              <span class="prezzo"> $ 40.00 </span>
-              <h4>Learning to Write as a Professional Author</h4>
-              <div class="row">
-                <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>20 Lessons </span>
-                <span class="meta"><i class="far fa-user pdr_10"></i>50 Students </span>
-              </div>
-            </div>
-          </div>
-          <!-- 2o BOX -->
-          <div class="corso row aic">
-            <div class="ppp">
-            </div>
-            <div class="box dx column ais">
-              <span class="prezzo"> Free </span>
-              <h4>Customer-centric Info-Tech Strategies</h4>
-              <div class="row">
-                <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>24 Lessons </span>
-                <span class="meta"><i class="far fa-user pdr_10"></i>769 Students </span>
-              </div>
-            </div>
-          </div>
-          <!-- 3o BOX -->
-          <div class="corso row aic">
-            <div class="ppp">
-            </div>
-            <div class="box dx column ais">
-              <span class="prezzo"> $19.00 </span>
-              <h4>Open Programming Courses for Everyone: Phyton</h4>
-              <div class="row">
-                <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>17 Lessons </span>
-                <span class="meta"><i class="far fa-user pdr_10"></i>62 Students </span>
-              </div>
-            </div>
-          </div>
-          <!-- 4o BOX -->
-          <div class="corso row aic">
-            <div class="ppp">
-            </div>
-            <div class="box dx column ais">
-              <span class="prezzo"> $26.00 </span>
-              <h4>Academic Listening and Note-taking</h4>
-              <div class="row">
-                <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>14 Lessons </span>
-                <span class="meta"><i class="far fa-user pdr_10"></i>67 Students </span>
-              </div>
-            </div>
-          </div>
-          <!-- 5o BOX -->
-          <div class="corso row aic">
-            <div class="ppp">
-            </div>
-            <div class="box dx column ais">
-              <span class="prezzo"> $39.00 </span>
-              <h4>Master JQuery in a short period of time</h4>
-              <div class="row">
-                <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>6 Lessons </span>
-                <span class="meta"><i class="far fa-user pdr_10"></i>51 Students </span>
-              </div>
-            </div>
-          </div>
-          <!-- 6o BOX -->
-          <div class="corso row aic">
-            <div class="ppp">
-            </div>
-            <div class="box dx column ais">
-              <span class="prezzo"> $59.00 </span>
-              <h4>Introduction to Javascript for Beginners</h4>
-              <div class="row">
-                <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>14 Lessons </span>
-                <span class="meta"><i class="far fa-user pdr_10"></i>76 Students </span>
-              </div>
-            </div>
-          </div>
-          <span id="violet" class="tac mgt_20 mgb_100 btngreen">View all courses  <i class="fas fa-arrow-right"></i></span>
-        </div>
-        <!-- /ROW CORSI -->
+    </header>
+    <!-- JUMBOTRON CENTRATO + ROW + ALIGN CENTER + SPACE BETWEEN -->
+    <div class="jumbotron centro row aic spb">
+      <!-- una colonna SX -->
+      <div class="column sx">
+        <!-- H2 + P + SPAN + IMG ESTERNA -->
+        <h2 class="mgb_20 darkb">Distant learning for further expansion</h2>
+        <p class="grey">Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
+        <span id="violet" class="tac mgt_20 btngreen"><i class="fas fa-download pdr_10"></i> Download free guide</span>
+        <p>Have questions?  <a href="#">Get Free Sample <i class="fas fa-arrow-right"></i></a></p>
       </div>
-    </section>
-    <!-- / ONLINE -->
-    <!-- SECTION COACH -->
-    <section id="coach">
+      <!-- DX IMG -->
+        <img class="mgt_60" src="img/about-me-profile.jpg" alt="">
+    </div>
+    <!-- /JUMBOTRON -->
+    <!-- ROW CONTENT CENTER WIDTH 100 / 6 -->
+    <div class="row centro jcc mgt_100">
+      <!-- SPONSOR 6 IMG -->
+      <ul class="sponsor row aic pdb_50">
+        <img src="img/client-logo-01.png" alt="">
+        <img src="img/client-logo-02.png" alt="">
+        <img src="img/client-logo-03.png" alt="">
+        <img src="img/client-logo-04.png" alt="">
+        <img src="img/client-logo-05.png" alt="">
+        <img src="img/client-logo-06.png" alt="">
+      </ul>
+    </div>
+    <!-- /SPONSOR -->
+    <main>
+      <!-- SECTION ONLINE -->
+      <section id="online">
         <!-- TITOLO SEZIONE  -->
-      <div class="centro pdt_50">
-        <div class="tac">
+        <div class="centro pdt_50">
           <!-- SPAN + H2 CENTRATI -->
-          <span class="up lightgrey">Maxcoach avaiable courses</span>
-          <h2 class="mgt_10 darkb">Access <a href="#" class="green">Smart Tutoring</a> Program for Benefits.</h2>
+          <div class="tac">
+            <span class="up lightgrey">Stimulated to learn?</span>
+            <h2 class="mgt_10 darkb">Feauterd Online Courses</h2>
+          </div>
+          <!-- ROW CORSI DA 6 BOX(CORSO) CON WRAP AL 50% -->
+          <div class="row corsi mgt_60">
+            <!-- 1o BOX-->
+            <div class="corso row aic">
+              <!-- IMG + SPAN + H4  -->
+              <div class="ppp">
+              </div>
+              <div class="box dx column ais">
+                <span class="prezzo"> $ 40.00 </span>
+                <h4>Learning to Write as a Professional Author</h4>
+                <div class="row">
+                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>20 Lessons </span>
+                  <span class="meta"><i class="far fa-user pdr_10"></i>50 Students </span>
+                </div>
+              </div>
+            </div>
+            <!-- 2o BOX -->
+            <div class="corso row aic">
+              <div class="ppp">
+              </div>
+              <div class="box dx column ais">
+                <span class="prezzo"> Free </span>
+                <h4>Customer-centric Info-Tech Strategies</h4>
+                <div class="row">
+                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>24 Lessons </span>
+                  <span class="meta"><i class="far fa-user pdr_10"></i>769 Students </span>
+                </div>
+              </div>
+            </div>
+            <!-- 3o BOX -->
+            <div class="corso row aic">
+              <div class="ppp">
+              </div>
+              <div class="box dx column ais">
+                <span class="prezzo"> $19.00 </span>
+                <h4>Open Programming Courses for Everyone: Phyton</h4>
+                <div class="row">
+                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>17 Lessons </span>
+                  <span class="meta"><i class="far fa-user pdr_10"></i>62 Students </span>
+                </div>
+              </div>
+            </div>
+            <!-- 4o BOX -->
+            <div class="corso row aic">
+              <div class="ppp">
+              </div>
+              <div class="box dx column ais">
+                <span class="prezzo"> $26.00 </span>
+                <h4>Academic Listening and Note-taking</h4>
+                <div class="row">
+                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>14 Lessons </span>
+                  <span class="meta"><i class="far fa-user pdr_10"></i>67 Students </span>
+                </div>
+              </div>
+            </div>
+            <!-- 5o BOX -->
+            <div class="corso row aic">
+              <div class="ppp">
+              </div>
+              <div class="box dx column ais">
+                <span class="prezzo"> $39.00 </span>
+                <h4>Master JQuery in a short period of time</h4>
+                <div class="row">
+                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>6 Lessons </span>
+                  <span class="meta"><i class="far fa-user pdr_10"></i>51 Students </span>
+                </div>
+              </div>
+            </div>
+            <!-- 6o BOX -->
+            <div class="corso row aic">
+              <div class="ppp">
+              </div>
+              <div class="box dx column ais">
+                <span class="prezzo"> $59.00 </span>
+                <h4>Introduction to Javascript for Beginners</h4>
+                <div class="row">
+                  <span class="meta mgr_40"><i class="far fa-file-alt pdr_10"></i>14 Lessons </span>
+                  <span class="meta"><i class="far fa-user pdr_10"></i>76 Students </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="centro tac">
+            <span id="violet" class="tac mgt_40 mgb_100 btngreen">View all courses  <i class="fas fa-arrow-right"></i></span>
+          </div>
+          <!-- /ROW CORSI -->
         </div>
-        <!-- ROW Benefits DA 3 COL con WIDTH AL 4 + MARGINI -->
-      <div class="benefits row spb mgt_80 mgb_100 aic">
-        <!-- 1a COL -->
-        <div class="benefit column">
-          <!-- IMG+H3+P+A -->
-          <img src="img/home-2-image-box-01.png" alt="">
-          <h3 class="mgt_40 darkb">Customize Preferences</h3>
-          <p class="mgt_20 grey">Learners are given the right to arrange and customize their study schedule and timetable based on preferences. </p>
-          <a href="#" class="mgt_10 darkb">Start here <i class="fas fa-arrow-right"></i></a>
+      </section>
+      <!-- / ONLINE -->
+      <!-- SECTION COACH -->
+      <section id="coach">
+          <!-- TITOLO SEZIONE  -->
+        <div class="centro mgt_100">
+          <div class="tac">
+            <!-- SPAN + H2 CENTRATI -->
+            <span class="up lightgrey">Maxcoach avaiable courses</span>
+            <h2 class="mgt_10 darkb">Access <a href="#" class="green">Smart Tutoring</a> Program for Benefits.</h2>
+          </div>
+          <!-- ROW Benefits DA 3 COL con WIDTH AL 4 + MARGINI -->
+        <div class="benefits row spb mgt_60 mgb_100 aic">
+          <!-- 1a COL -->
+          <div class="benefit column">
+            <!-- IMG+H3+P+A -->
+            <img src="img/home-2-image-box-01.png" alt="">
+            <h3 class="mgt_40 darkb">Customize Preferences</h3>
+            <p class="mgt_20 grey">Learners are given the right to arrange and customize their study schedule and timetable based on preferences. </p>
+            <a href="#" class="mgt_10 darkb">Start here <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <!-- 2a COL -->
+          <div class="benefit column">
+            <!-- IMG+H3+P+A -->
+            <img src="img/about-us-02-image-box-02.png" alt="">
+            <h3 class="mgt_40 darkb">Cloud Storage</h3>
+            <p class="mgt_20 grey">You can store online lessons via online cloud or download to your device and revise lessons on the way.  </p>
+            <a href="#" class="mgt_10 darkb">Get Free Quote <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="benefit column">
+            <!-- 3a COL -->
+            <!-- IMG+H3+P+A -->
+            <img src="img/home-2-image-box-03.png" alt="">
+            <h3 class="mgt_20 darkb">Multimedia Channels</h3>
+            <p class="mgt_20 grey">We provide study materials with various formats: video, audio, slides, doc, prints, books and applications. </p>
+            <a href="#" class="mgt_10 darkb">Start now <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <!-- 2a COL -->
-        <div class="benefit column">
-          <!-- IMG+H3+P+A -->
-          <img src="img/about-us-02-image-box-02.png" alt="">
-          <h3 class="mgt_40 darkb">Cloud Storage</h3>
-          <p class="mgt_20 grey">You can store online lessons via online cloud or download to your device and revise lessons on the way.  </p>
-          <a href="#" class="mgt_10 darkb">Get Free Quote <i class="fas fa-arrow-right"></i></a>
+        <!-- / ROW BENEFITS -->
+        <!-- ROW Video da 2 div al 60/40 -->
+        <div class="video row">
+          <div class="">
+            <img src="img/home-2-popup-video-poster.jpg" alt="">
+          </div>
+          <!-- col al 40 -->
+          <div class="column enjoy jcs pdt_50 ">
+            <!-- span+h2+p+a -->
+            <span class="up grey mgt_40">Get started <span class="darkb">effortlessly</span></span>
+            <h2 class="mgb_20 darkb mgt_20">Enjoy Our <a href="#" class="green">Companionship</a></h2>
+            <p class="grey">Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek for some hidden hints of early-bird rewards as well.</p>
+            <a href="#" class="green mgt_40">Download free guidebook  <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="benefit column">
-          <!-- 3a COL -->
-          <!-- IMG+H3+P+A -->
-          <img src="img/home-2-image-box-03.png" alt="">
-          <h3 class="mgt_20 darkb">Multimedia Channels</h3>
-          <p class="mgt_20 grey">We provide study materials with various formats: video, audio, slides, doc, prints, books and applications. </p>
-          <a href="#" class="mgt_10 darkb">Start now <i class="fas fa-arrow-right"></i></a>
+        <!-- / ROW Video -->
         </div>
-      </div>
-      <!-- / ROW BENEFITS -->
-      <!-- ROW Video da 2 div al 60/40 -->
-      <div class="video row">
+      </section>
+      <!-- / COACH -->
+      <!-- SECTION LEARNERS -->
+      <section id="learners">
+          <!-- TITOLO SEZIONE  -->
+          <div class="tac">
+          <!-- SPAN + H2 CENTRATI -->
+            <span class="up lightgrey">Great words about Maxcoach</span>
+            <h2 class="mgt_10 darkb">Our <a href="#" class="green">top learners'</a> verbatim</h2>
+          </div>
+          <!-- SLIDER ROW DA 3 AL 30% + MARGIN -->
+          <div class="slider row">
+            <!-- 1o SLIDE -->
+            <div class="slide column opa">
+              <!-- h4+p  -->
+              <h4 class="darkb">It's a choice of quality for peopole with special needs</h4>
+              <p class="grey mgt_20">I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
+              <div class="testimonial mgt_20 row">
+                <div class="test mgr_20">
+                </div>
+                <!-- testimonial -->
+                <div class="column jcc">
+                  <span class="up darkb">Mina Hollace</span>
+                  <span class="lightgrey"> / Freelancer</span>
+                </div>
+              </div>
+            </div>
+            <!-- 2o SLIDE -->
+            <div class="slide column">
+                  <!-- h4+p  -->
+              <h4 class="darkb">High level of efficiency and scientific teaching methods</h4>
+              <p class="grey mgt_20">I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.</p>
+              <div class="testimonial mgt_20 row">
+                <div class="test mgr_20">
+                </div>
+                <!-- testimonial -->
+                <div class="column jcc">
+                  <span class="up darkb">Florence themes</span>
+                  <span class="lightgrey"> / Multimedia Admin</span>
+                </div>
+              </div>
+            </div>
+            <!-- 3o SLIDE -->
+            <div class="slide column opa">
+                  <!-- h4+p  -->
+              <h4 class="darkb">Professional team of specialist and passionate mentors at reach</h4>
+              <p class="grey mgt_20">I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+              <div class="testimonial mgt_20 row">
+                <div class="test mgr_20">
+                </div>
+                <!-- testimonial -->
+                <div class="column jcc">
+                  <span class="up darkb">Madley Pondor</span>
+                  <span class="lightgrey"> / IT Specialist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- / SLIDER -->
+          <div class="certification centro tac">
+            <!-- H3 + H2 + SPAN CENTRATI -->
+            <h3 class="mgt_10 darkb">Start today for getting <a href="#" class="green">Online certification</a></h3>
+            <h2 class="darkb mgt_10">You can be your own guiding star with our help!</h2>
+            <span id="violet" class="tac btngreen mgt_40">Get started now</span>
+          </div>
+      </section>
+      <!-- / LEARNERS -->
+       <!-- SECTION STATS -->
+      <section id="stats">
+        <!-- DIV CENTRATO -->
+        <!-- ROW 4 COL AL 25% -->
+        <div class="dati row centro jcc tac">
+          <!-- 1a Col -->
+          <div class="dato column">
+            <!-- h3+ span + p -->
+            <h3 class="darkb">Successfully trained</h3>
+            <span class="green">1790</span>
+            <p class="up grey">enrolled learnes</p>
+          </div>
+          <!-- 2a Col -->
+          <div class="dato column">
+            <h3 class="darkb">Proudly Received</h3>
+            <span class="green">19</span>
+            <p class="up grey">countrywide awards</p>
+          </div>
+          <!-- 3a Col -->
+          <div class="dato column">
+            <h3 class="darkb">Firmly established</h3>
+            <span class="green">24</span>
+            <p class="up grey">local branches</p>
+          </div>
+          <!-- 4a Col -->
+          <div class="dato column">
+            <h3 class="darkb">Getting Feauterd on</h3>
+            <span class="green">1090</span>
+            <p class="up grey">blog posts</p>
+          </div>
+        </div>
+        <!-- / ROW DATI -->
+      </section>
+      <!-- / SECTION STATS -->
+      <!-- SECTION BLOGS -->
+      <section id="blogs">
+        <div class="centro">
+
+          <div class="row blog spb">
+            <!-- 3 div  1 al 35 2 al 30 -->
+            <!-- 1o div -->
+            <div class="most_viewed ">
+              <!-- span + h3  -->
+              <span class="lightgrey up">Enjoyable insights</span>
+              <h3 class="darkb">Most Viewed <span class="green">Best Blogs</span> </h3>
+              <!-- UL insights -->
+              <ul class="insights mgt_10">
+                <li> <i class="fas fa-arrow-right"></i>Become a Better Blogger: Content Planning</li>
+                <li> <i class="fas fa-arrow-right"></i>Promoting Your Online Business on Pinterest</li>
+                <li> <i class="fas fa-arrow-right"></i>Gamification and Game-Based Learning</li>
+                <li> <i class="fas fa-arrow-right"></i> Designing an Online Course from Expert’s Perspective</li>
+                <li> <i class="fas fa-arrow-right"></i>Why Online Courses Are the Future of Education</li>
+              </ul>
+            </div>
+            <!-- 2o div COL -->
+            <div class="artist column">
+              <!-- img artista -->
+              <img src="img/artist-blog-03-480x352.jpeg" alt="">
+              <div class="categories">
+                <!-- span + h3 + calendario + view -->
+                <span class="lightgrey up">Artist</span>
+                <h3 class="darkb mgt_10">Brush Strokes Energize Trees in paintings</h3>
+                <div class="row lightgrey mgt_20">
+                  <span class=" mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
+                  <span class=""><i class="far fa-eye"></i>688 views</span>
+                </div>
+              </div>
+            </div>
+            <!-- 3o div COL-->
+            <div class="artist column">
+              <!-- img artista -->
+              <img src="img/artist-blog-01-480x352.jpg" alt="">
+              <div class="categories">
+                <!-- span + h3 + calendario + view -->
+                <span class="lightgrey up">Artist</span>
+                <h3 class="darkb mgt_10">Pocket-Sized Notebooks Hold Miniature Paintings</h3>
+                <div class="row lightgrey mgt_20">
+                  <span class=" mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
+                  <span class=""><i class="far fa-eye"></i>603 views</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /BLOGS -->
+      <!-- SECTION NEWSLETTER -->
+      <section id="newsletter">
         <div class="">
-          <img src="img/home-2-popup-video-poster.jpg" alt="">
-        </div>
-        <!-- col al 40 -->
-        <div class="column enjoy jcs pdt_50 ">
-          <!-- span+h2+p+a -->
-          <span class="up grey mgt_40">Get started <span class="darkb">effortlessly</span></span>
-          <h2 class="mgb_20 darkb mgt_20">Enjoy Our <a href="#" class="green">Companionship</a></h2>
-          <p class="grey">Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek for some hidden hints of early-bird rewards as well.</p>
-          <a href="#" class="green mgt_40">Download free guidebook  <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <!-- / ROW Video -->
-      </div>
-    </section>
-    <!-- / COACH -->
-    <!-- SECTION LEARNERS -->
-    <section id="learners">
-        <!-- TITOLO SEZIONE  -->
-        <div class="tac">
-        <!-- SPAN + H2 CENTRATI -->
-          <span class="up lightgrey">Great words about Maxcoach</span>
-          <h2 class="mgt_10 darkb">Our <a href="#" class="green">top learners'</a> verbatim</h2>
-        </div>
-        <!-- SLIDER ROW DA 3 AL 30% + MARGIN -->
-        <div class="slider row">
-          <!-- 1o SLIDE -->
-          <div class="slide column opa">
-            <!-- h4+p  -->
-            <h4 class="darkb">It's a choice of quality for peopole with special needs</h4>
-            <p class="grey mgt_20">I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
-            <div class="testimonial mgt_20 row">
-              <div class="test mgr_20">
-              </div>
-              <!-- testimonial -->
-              <div class="column jcc">
-                <span class="up darkb">Mina Hollace</span>
-                <span class="lightgrey"> / Freelancer</span>
-              </div>
-            </div>
-          </div>
-          <!-- 2o SLIDE -->
-          <div class="slide column">
-                <!-- h4+p  -->
-            <h4 class="darkb">High level of efficiency and scientific teaching methods</h4>
-            <p class="grey mgt_20">I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.</p>
-            <div class="testimonial mgt_20 row">
-              <div class="test mgr_20">
-              </div>
-              <!-- testimonial -->
-              <div class="column jcc">
-                <span class="up darkb">Florence themes</span>
-                <span class="lightgrey"> / Multimedia Admin</span>
-              </div>
-            </div>
-          </div>
-          <!-- 3o SLIDE -->
-          <div class="slide column opa">
-                <!-- h4+p  -->
-            <h4 class="darkb">Professional team of specialist and passionate mentors at reach</h4>
-            <p class="grey mgt_20">I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
-            <div class="testimonial mgt_20 row">
-              <div class="test mgr_20">
-              </div>
-              <!-- testimonial -->
-              <div class="column jcc">
-                <span class="up darkb">Madley Pondor</span>
-                <span class="lightgrey"> / IT Specialist</span>
-              </div>
+          <div class="centro tac sub">
+            <!-- h2 + p -->
+            <h2 class="darkb">Subscribe <span class="green">newsletter</span> </h2>
+            <p class="grey mgt_40">Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
+            <div class="row email jcc mgt_40">
+              <!-- INPUT EMAIL -->
+              <input type="text" name="" value="" placeholder="Enter your email">
+              <button id="violet" type="button" name="button">Subscribe</button>
             </div>
           </div>
         </div>
-         <!-- / SLIDER -->
-        <div class="certification centro tac">
-          <!-- H3 + H2 + SPAN CENTRATI -->
-          <h3 class="mgt_10 darkb">Start today for getting <a href="#" class="green">Online certification</a></h3>
-          <h2 class="darkb mgt_10">You can be your own guiding star with our help!</h2>
-          <span id="violet" class="tac btngreen mgt_40">Get started now</span>
-        </div>
-    </section>
-    <!-- / LEARNERS -->
-     <!-- SECTION STATS -->
-    <section id="stats">
-      <!-- DIV CENTRATO -->
-      <!-- ROW 4 COL AL 25% -->
-      <div class="dati row centro jcc tac">
-        <!-- 1a Col -->
-        <div class="dato column">
-          <!-- h3+ span + p -->
-          <h3 class="darkb">Successfully trained</h3>
-          <span class="green">1790</span>
-          <p class="up grey">enrolled learnes</p>
-        </div>
-        <!-- 2a Col -->
-        <div class="dato column">
-          <h3 class="darkb">Proudly Received</h3>
-          <span class="green">19</span>
-          <p class="up grey">countrywide awards</p>
-        </div>
-        <!-- 3a Col -->
-        <div class="dato column">
-          <h3 class="darkb">Firmly established</h3>
-          <span class="green">24</span>
-          <p class="up grey">local branches</p>
-        </div>
-        <!-- 4a Col -->
-        <div class="dato column">
-          <h3 class="darkb">Getting Feauterd on</h3>
-          <span class="green">1090</span>
-          <p class="up grey">blog posts</p>
-        </div>
-      </div>
-      <!-- / ROW DATI -->
-    </section>
-    <!-- / SECTION STATS -->
-    <section id="blogs">
-      <div class="centro">
-        <div class="row blog spb">
-          <div class="most_viewed ">
-            <span class="lightgrey up">Enjoyable insights</span>
-            <h3 class="darkb">Most Viewed <span class="green">Best Blogs</span> </h3>
-            <ul class="insights mgt_10">
-              <li> <i class="fas fa-arrow-right"></i>Become a Better Blogger: Content Planning</li>
-              <li> <i class="fas fa-arrow-right"></i>Promoting Your Online Business on Pinterest</li>
-              <li> <i class="fas fa-arrow-right"></i>Gamification and Game-Based Learning</li>
-              <li> <i class="fas fa-arrow-right"></i> Designing an Online Course from Expert’s Perspective</li>
-              <li> <i class="fas fa-arrow-right"></i>Why Online Courses Are the Future of Education</li>
-            </ul>
-          </div>
-          <div class="artist column">
-            <img src="img/artist-blog-03-480x352.jpeg" alt="">
-            <div class="categories">
-              <span class="lightgrey up">Artist</span>
-              <h3 class="darkb mgt_10">Brush Strokes Energize Trees in paintings</h3>
-              <div class="row lightgrey mgt_20">
-                <span class=" mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
-                <span class=""><i class="far fa-eye"></i>688 views</span>
-              </div>
-            </div>
-          </div>
-          <div class="artist column">
-            <img src="img/artist-blog-01-480x352.jpg" alt="">
-            <div class="categories">
-              <span class="lightgrey up">Artist</span>
-              <h3 class="darkb mgt_10">Pocket-Sized Notebooks Hold Miniature Paintings</h3>
-              <div class="row lightgrey mgt_20">
-                <span class=" mgr_40"><i class="far fa-calendar"></i>May 15,2020</span>
-                <span class=""><i class="far fa-eye"></i>603 views</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="newsletter">
-      <div class="">
-        <div class="centro tac sub">
-          <h2 class="darkb">Subscribe <span class="green">newsletter</span> </h2>
-          <p class="grey mgt_40">Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
-          <div class="row email jcc mgt_40">
-            <input type="text" name="" value="" placeholder="Enter your email">
-            <button id="violet" type="button" name="button">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
+      </section>
+      <!-- / NEWSLETTER -->
+    </main>
+    <!-- /MAIN -->
+    <footer>
 
 
-  </footer>
-
+    </footer>
+  </div>
 
 
 
