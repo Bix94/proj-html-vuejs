@@ -5,6 +5,30 @@ var app = new Vue({
     explore: ['Start here','Success story','Blog','Courses','About us','Contact us'],
     information: ['Membership','Purchase guide','Privacy policy','Terms of services'],
     social: ['facebook-square', 'twitter' , 'instagram' , 'linkedin'],
+    learners:
+    [
+      {
+        titolo: 'Its a choice of quality for peopole with special needs',
+        paragrafo: 'Im a very strict person so I require everything to be organized and neat. Then, I ll be able to make things right and shine. MaxCoach guys just got me.',
+        immagine: 'testimonial-avata-03',
+        nome: 'Florence themes',
+        lavoro: ' / Multimedia Admin',
+      },
+      {
+        titolo: 'High level of efficiency and scientific teaching methods',
+        paragrafo: 'I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.',
+        immagine: 'testimonial-avata-02',
+        nome: 'Mina Hollace',
+        lavoro: '/ Freelancer',
+      },
+      {
+        titolo: 'Professional team of specialist and passionate mentors at reach',
+        paragrafo: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+        immagine: 'testimonial-avata-04',
+        nome: 'Madley Pondor',
+        lavoro: '/ IT Specialist',
+      }
+    ],
     address:
     [
     {

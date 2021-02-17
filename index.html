@@ -107,7 +107,7 @@
             <div v-for="corso in corsi" class="corsi mgt_40">
               <!-- 1o BOX-->
               <div class="corso row aic">
-                <div class="sfondo">
+                <div class="sfondo ">
                   <img :src=" 'img/' + corso.immagine + '.jpg' " alt="">
                 </div>
                 <div class="box dx column ais pdr_20 pdl_10">
@@ -218,55 +218,26 @@
           <!-- SLIDER ROW DA 3 AL 30% + MARGIN -->
           <div class="slider row aic">
             <!-- 1o SLIDE -->
-            <div class="slide column opa">
+            <div v-for="learn in learners" class="slide column">
               <!-- h4+p  -->
-              <h4 class="darkb">It's a choice of quality for peopole with special needs</h4>
-              <p class="grey mgt_20">I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.</p>
+              <h4 class="darkb">{{learn.titolo}}</h4>
+              <p class="grey mgt_20">{{learn.paragrafo}}</p>
               <div class="testimonial mgt_20 row">
-                <div class="test sinistra mgr_20">
-                </div>
-                <!-- testimonial -->
-                <div class="column">
-                  <span class="up darkb">Florence themes</span>
-                  <span class="lightgrey"> / Multimedia Admin</span>
-                </div>
-              </div>
-            </div>
-            <!-- 2o SLIDE -->
-            <div class="slide column">
-                  <!-- h4+p  -->
-              <h4 class="darkb">High level of efficiency and scientific teaching methods</h4>
-              <p class="grey mgt_20">I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.</p>
-              <div class="testimonial mgt_20 row">
-                <div class="test centrale mgr_20">
+                <div class="mgr_20 ">
+                  <img class="test" :src=" 'img/' + learn.immagine + '.jpg' " alt="">
                 </div>
                 <!-- testimonial -->
                 <div class="column jcc">
-                  <span class="up darkb">Mina Hollace</span>
-                  <span class="lightgrey"> / Freelancer</span>
-                </div>
-              </div>
-            </div>
-            <!-- 3o SLIDE -->
-            <div class="slide column opa">
-                  <!-- h4+p  -->
-              <h4 class="darkb">Professional team of specialist and passionate mentors at reach</h4>
-              <p class="grey mgt_20">I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
-              <div class="testimonial mgt_20 row">
-                <div class="test destra mgr_20">
-                </div>
-                <!-- testimonial -->
-                <div class="column jcc">
-                  <span class="up darkb">Madley Pondor</span>
-                  <span class="lightgrey"> / IT Specialist</span>
+                  <span class="up darkb">{{learn.nome}}</span>
+                  <span class="lightgrey"> {{learn.lavoro}}</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="circle row centro jcc">
-            <i class="fas fa-circle opa"></i>
+          <div class="circle row centro jcc grey">
             <i class="fas fa-circle"></i>
-            <i class="fas fa-circle opa"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
           </div>
            <!-- / SLIDER -->
           <div class="certification centro tac">
