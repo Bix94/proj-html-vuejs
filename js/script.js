@@ -58,5 +58,28 @@ var app = new Vue({
         studenti: '76 Students',
       }
     ],
+    statistiche:
+    [
+      {
+        verbo: 'Successfully trained',
+        numero: '1790',
+        obbiettivo: 'enrolled learnes',
+      },
+      {
+        verbo: 'Proudly Received',
+        numero: '19',
+        obbiettivo: 'countrywide awards',
+      },
+      {
+        verbo: 'Firmly established',
+        numero: '24',
+        obbiettivo: 'local branches',
+      },
+      {
+        verbo: 'Gettin Featured on',
+        numero: '1090',
+        obbiettivo: 'blog posts',
+      }
+    ],
   },
 });

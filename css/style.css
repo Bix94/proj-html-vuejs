@@ -28,12 +28,12 @@ li{
   width: 250px;
   display: inline-block;
 }
+.violet:hover{
+  background-color: #3d3c63;
+}
 /* ID */
 #online{
   background-color: #f5f7fa;
-}
-#violet:hover{
-  background-color: #3d3c63;
 }
 #online h2 {
   font-size: 35px;
@@ -361,6 +361,7 @@ footer{
 }
 .address{
   width: 35%;
+  margin-right: 200px;
 }
 .socialist{
   color: #727272;
@@ -370,23 +371,27 @@ footer{
   padding-right: 30px;
   padding-top: 10px;
 }
-.padre{
-  flex-wrap: wrap;
-  min-width: 400px;
-}
+
 .explore{
   width: 300px;
   flex-wrap: wrap;
 }
 .explore li{
-  padding-right: 60px;
+  min-width: 150px;
 }
-.information{
-  padding-left: 100px;
-}
+
 .copyright{
   padding: 50px 0;
   color: #b8b7c6;
+}
+.reset{
+  height: 70px;
+  width: 70px;
+  background-color: #20ad96;
+  font-size: 30px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
 }
 /* IMG ABSOLUTE */
 .absolute{
@@ -484,3 +489,5 @@ footer{
   right: 200px;
   top: 100px;
 }
+
+/* SLIDER */
